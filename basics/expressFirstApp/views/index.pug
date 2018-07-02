@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  -var someCondition = true
+  if someCondition
+  -var values = ['This','is','my','list',5]
+  ul
+    each value in values
+      li= value
+
