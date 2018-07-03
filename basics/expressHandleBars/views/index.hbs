@@ -1,4 +1,13 @@
 <h1>{{ title }}</h1>
 <p>Welcome to {{title}}</p>
+{{# if condition }}
+    <h3 style="color: darkseagreen">The condition was met</h3>
+{{else}}
+    <h3 style="color: darkred">The condition was not met</h3>
+{{/if}}
 
-
+<ul>
+    {{# each someArray as |val key|}}
+        <li>{{key}} - {{value}}</li>
+    {{/each}}
+</ul>
